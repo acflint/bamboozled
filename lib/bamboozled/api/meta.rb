@@ -16,9 +16,13 @@ module Bamboozled
       def tables
         request(
           :get, "meta/tables",
-          typecast_values: false)[:tables]
+          typecast_values: false
+        )[:tables]
       end
 
+      def time_off_types
+        request(:get, "meta/time_off/types/")
+      end
     end
   end
 end
