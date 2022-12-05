@@ -44,4 +44,12 @@ RSpec.describe "Meta" do
     fields = @client.meta.lists
     expect(fields).to be_a Hash
   end
+
+  it "Gets the time off types" do
+    res = get_response("spec/fixtures/meta_time_off_types.json")
+    make_stub(res)
+
+    types = @client.meta.time_off_types
+    expect(types).to be_a Hash
+  end
 end

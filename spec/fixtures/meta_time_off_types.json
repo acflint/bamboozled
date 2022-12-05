@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Tue, 17 Jun 2014 19:25:35 UTC
+
+{
+   "timeOffTypes":    [
+            {
+         "id": "1",
+         "name": "Vacation",
+         "units": "hours",
+         "color": "eef448",
+         "icon": "palm-trees"
+      },
+   ],
+   "defaultHours":    [
+            {
+         "name": "Saturday",
+         "amount": "0"
+      },
+            {
+         "name": "Sunday",
+         "amount": "0"
+      },
+            {
+         "name": "default",
+         "amount": "8"
+      }
+   ]
+}
